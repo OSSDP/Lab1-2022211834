@@ -2,6 +2,7 @@
 #include<iostream>
 #include<algorithm>
 #define INF 0x3F3F3F3F
+//first change
 using namespace std;
 const int N = 1000;
 int f[N], d[N], t[N], q[N][N];
