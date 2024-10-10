@@ -3,6 +3,7 @@
 #include<algorithm>
 #define INF 0x3F3F3F3F
 //first change
+//B2
 using namespace std;
 const int N = 1000;
 int f[N], d[N], t[N], q[N][N];
@@ -16,7 +17,7 @@ int main()
 	cin >> z;
 	h = z * 60;
 	for (int i = 1; i <= n; i++)cin >> f[i];
-	//q[i][j]±íÊ¾µÚi¸ö³ØÌÁµÚj´Îµöµ½µÄÓã
+	//q[i][j]ï¿½ï¿½Ê¾ï¿½ï¿½iï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½jï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	for (int i = 1; i <= n; i++)
 	{
 		cin >> d[i];
@@ -24,7 +25,7 @@ int main()
 			num1 = 0;
 			while (num1 * d[i] < f[i])
 			{
-				q[i][0] = 0;//Êý×éÃ»³õÊ¼»¯µÄ»°£¬ÖµÒ²²»ÊÇÄ¬ÈÏÎªÁã
+				q[i][0] = 0;//ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ÖµÒ²ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½Îªï¿½ï¿½
 				q[i][num1+1] = f[i] - num1 * d[i];
 				num1++;
 			}
